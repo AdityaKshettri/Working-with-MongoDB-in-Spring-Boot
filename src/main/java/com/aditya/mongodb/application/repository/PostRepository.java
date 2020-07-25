@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.aditya.mongodb.application.entity.Post;
 
 @Repository
-public interface PostRepository extends MongoRepository<Post, Long>
+public interface PostRepository extends MongoRepository<Post, String>
 {
 	
 }

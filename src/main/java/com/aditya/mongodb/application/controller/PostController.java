@@ -29,7 +29,7 @@ public class PostController
 	}
 	
 	@GetMapping("/{id}")
-	public Optional<Post> findById(@PathVariable Long id) {
+	public Optional<Post> findById(@PathVariable String id) {
 		return postService.findById(id);
 	}
 	
@@ -44,7 +44,7 @@ public class PostController
 	}
 	
 	@DeleteMapping("/{id}")
-	public void deleteById(@PathVariable Long id) {
+	public void deleteById(@PathVariable String id) {
 		postService.deleteById(id);
 	}
 }
